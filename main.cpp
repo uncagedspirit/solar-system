@@ -1,14 +1,10 @@
+#include "solarglwidget.h"
 #include <QApplication>
-#include <QLabel>
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
-
-    QLabel label("Hello, World!");
-    label.setWindowTitle("My 100th Qt Application");
-    label.resize(200, 100);
-    label.show();
-
+    SolarGLWidget widget;
+    widget.resize(800, 600);
+    widget.show();
     return app.exec();
 }
